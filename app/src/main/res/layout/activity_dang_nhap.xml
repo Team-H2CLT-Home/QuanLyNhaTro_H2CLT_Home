@@ -41,12 +41,14 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:passwordToggleEnabled="true"
         >
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edMatKhau"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Mật Khẩu"
+            android:inputType="textPassword"
             />
     </com.google.android.material.textfield.TextInputLayout>
     <CheckBox
