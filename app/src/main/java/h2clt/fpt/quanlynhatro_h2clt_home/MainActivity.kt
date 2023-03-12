@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         // Hello Everyone
         //hiep đã ở đây
+        ///thanh
 
     }
 }
