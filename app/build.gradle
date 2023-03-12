@@ -7,6 +7,10 @@ android {
     namespace 'h2clt.fpt.quanlynhatro_h2clt_home'
     compileSdk 33
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId "h2clt.fpt.quanlynhatro_h2clt_home"
         minSdk 24
