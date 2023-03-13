@@ -10,11 +10,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        // Hello Everyone
-        //hiep đã ở đây
-        ///thanh
-        // Cường đã ở đây
-        //abc ok file
 
     }
 }
