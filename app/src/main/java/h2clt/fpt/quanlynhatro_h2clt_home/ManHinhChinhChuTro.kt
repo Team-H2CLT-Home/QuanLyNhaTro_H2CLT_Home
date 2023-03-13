@@ -7,5 +7,6 @@ class ManHinhChinhChuTro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_man_hinh_chinh_chu_tro)
+            ////
     }
 }
