@@ -18,6 +18,13 @@
             android:name=".HuongDanTaoKhuActivity"
             android:exported="false" />
         <activity
+            android:name=".DangKy"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".DangNhap"
             android:exported="false" />
         <activity
