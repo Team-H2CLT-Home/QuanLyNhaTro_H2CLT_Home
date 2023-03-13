@@ -57,7 +57,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_taohopdong" />
+                    android:src="@drawable/img_coctien1" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -70,7 +70,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/icon_cocgiucho" />
+                    android:src="@drawable/img_coctien1" />
 
                 <TextView
                     style="@style/textView_tabLayout"
