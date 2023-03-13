@@ -17,6 +17,35 @@
         <item name="android:textColor">@color/white</item>
     </style>
 
+    /// Phần tablayoyt gồm có img, textView
+
+    <style name="Tablayout_Linner">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:background">@drawable/boder_nen</item>
+    </style>
+
+    <style name="image_tabLayout">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="textView_tabLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    ///
     <style name="button_maudo">
         <item name="android:layout_width">230dp</item>
         <item name="android:layout_height">40dp</item>
@@ -25,4 +54,5 @@
         <item name="android:backgroundTint">@color/mauDo</item>
 
     </style>
+
 </resources>
