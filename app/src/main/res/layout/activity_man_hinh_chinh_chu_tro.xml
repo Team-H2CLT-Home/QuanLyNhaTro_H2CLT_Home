@@ -16,19 +16,38 @@
            android:layout_marginTop="5dp"
            android:layout_marginLeft="5dp"
            android:layout_marginRight="5dp"
+           android:background="@color/mauChinhApp"
            >
-
            <androidx.appcompat.widget.Toolbar
                style="@style/toolBar"
                >
                <ImageView
-                   android:layout_width="50dp"
-                   android:layout_height="50dp"
-                   android:src="@drawable/icon_home"
+                   android:layout_width="40dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/home_icon"
                    />
+               <TextView
+                   android:id="@+id/titleTenKhuTro"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="30dp"
+                   android:text="Khu A"
+                   android:textStyle="bold"
+                   android:textColor="@color/white"
+                   android:paddingLeft="20dp"
+                   />
+                  <androidx.constraintlayout.utils.widget.ImageFilterView
+                      android:layout_width="40dp"
+                      android:layout_height="40dp"
+                      android:src="@drawable/menu_icon"
+                      android:layout_gravity="right"
+                      android:layout_marginRight="20dp"
+                      />
+
            </androidx.appcompat.widget.Toolbar>
 
        </androidx.cardview.widget.CardView>
+
 
 
 
