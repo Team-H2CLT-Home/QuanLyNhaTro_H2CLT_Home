@@ -14,5 +14,6 @@ class ManHinhChao : AppCompatActivity() {
             val intent = Intent(this,HuongDanTaoKhuActivity::class.java)
             startActivity(intent)
         },2000)
+        ////
     }
 }
