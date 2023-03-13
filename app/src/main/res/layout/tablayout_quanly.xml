@@ -10,62 +10,78 @@
               android:text="Thao tác nhà trọ"
               android:layout_marginLeft="5dp"
               android:textColor="@color/mauChinhApp"
-              android:textSize="17dp"
+              android:textSize="20dp"
+              android:textStyle="bold"
               />
-          <ScrollView
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:layout_marginLeft="3dp"
-              android:layout_marginRight="3dp"
-              >
-              <GridLayout
-                  android:layout_width="match_parent"
-                  android:layout_height="match_parent"
-                  android:rowCount="2"
-                  android:columnCount="2"
-                  >
-                  <LinearLayout
-                      android:layout_width="195dp"
-                      android:layout_height="250dp"
-                      android:layout_marginLeft="3dp"
-                      android:orientation="vertical"
-                      android:background="@drawable/boder_nen">
-                      <ImageView
-                          android:layout_width="100dp"
-                          android:layout_height="150dp"
-                          android:layout_gravity="center"
-                          android:src="@drawable/img_taohopdong"
-                          />
-                      <TextView
-                          android:layout_width="wrap_content"
-                          android:layout_height="wrap_content"
-                          android:layout_gravity="center"
-                          android:textSize="25dp"
-                          android:layout_marginTop="20dp"
-                          android:textColor="@color/black"
-                          android:text="Tạo Hợp Đồng"
-                          android:textStyle="bold"
-                          />
-                  </LinearLayout>
-                  <LinearLayout
-                      android:layout_width="195dp"
-                      android:layout_height="300dp"
-                      android:orientation="vertical"
-                      android:layout_marginLeft="10dp"
-                      android:background="@drawable/boder_nen">
-                      <ImageView
-                          android:layout_width="match_parent"
-                          android:layout_height="match_parent"
-                          />
-                  </LinearLayout>
 
-              </GridLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <LinearLayout style="@style/Tablayout_Linner">
+
+                <ImageView
+                    style="@style/image_tabLayout"
+                    android:src="@drawable/img_hopdong1" />
+
+                <TextView
+                    style="@style/textView_tabLayout"
+                    android:text="Tạo Hợp Đồng"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Tablayout_Linner">
+
+                <ImageView
+                    style="@style/image_tabLayout"
+                    android:src="@drawable/img_coctien1" />
+
+                <TextView
+                    style="@style/textView_tabLayout"
+                    android:text="Cọc giữ chỗ" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Tablayout_Linner"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    style="@style/image_tabLayout"
+                    android:src="@drawable/img_taohopdong" />
+
+                <TextView
+                    style="@style/textView_tabLayout"
+                    android:text="Tạo Hợp Đồng" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/Tablayout_Linner"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    style="@style/image_tabLayout"
+                    android:src="@drawable/icon_cocgiucho" />
+
+                <TextView
+                    style="@style/textView_tabLayout"
+                    android:text="Cọc giữ chỗ" />
+            </LinearLayout>
 
 
+        </GridLayout>
 
 
-
-          </ScrollView>
+    </ScrollView>
 
 
 </LinearLayout>
