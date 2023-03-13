@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".HuongDanTaoKhuActivity">
     <ImageView
         android:id="@+id/imgHuongDanTaoKhu"
@@ -17,8 +18,11 @@
     <Button
         android:id="@+id/btnHuongDanTaoKhu"
         style="@style/button"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="380dp"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="192dp"
+
+        android:layout_marginTop="376dp"
         android:drawableLeft="@drawable/baseline_add_24"
         android:text="Tạo khu trọ"
         app:layout_constraintStart_toStartOf="@+id/imgHuongDanTaoKhu"
