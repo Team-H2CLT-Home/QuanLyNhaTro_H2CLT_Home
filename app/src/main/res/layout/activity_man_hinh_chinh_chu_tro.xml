@@ -47,9 +47,21 @@
            </androidx.appcompat.widget.Toolbar>
 
        </androidx.cardview.widget.CardView>
-
-
-
+       <com.google.android.material.tabs.TabLayout
+           android:id="@+id/tabLayoutManHinhChinh"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/boder_nen"
+           />
+       <androidx.viewpager2.widget.ViewPager2
+           android:id="@+id/viewPager2ManHinhChinh"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginTop="10dp"
+           />
 
 
 
