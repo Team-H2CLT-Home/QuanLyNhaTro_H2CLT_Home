@@ -11,14 +11,19 @@
         app:title="@string/dang_nhap"
 
         />
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/logo"
-        android:background="@drawable/boder_tron"
-        />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="100dp"
+        >
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/logo"
+            />
+    </androidx.cardview.widget.CardView>
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -77,4 +82,28 @@
           android:text="Hủy"
           />
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản"
+            android:textSize="18dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:textSize="18sp"
+            android:textColor="@color/purple_700"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            />
+    </LinearLayout>
+
+
 </LinearLayout>

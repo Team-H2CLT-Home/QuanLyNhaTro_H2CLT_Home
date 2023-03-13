@@ -12,6 +12,9 @@
         android:theme="@style/Theme.QuanLyNhaTro_H2CLT_Home"
         tools:targetApi="31">
         <activity
+            android:name=".HuongDanTaoKhuActivity"
+            android:exported="false" />
+        <activity
             android:name=".DangNhap"
             android:exported="false" />
         <activity
