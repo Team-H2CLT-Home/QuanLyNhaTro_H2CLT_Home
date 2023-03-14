@@ -3,6 +3,7 @@ package h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayoutMediator
+import h2clt.fpt.quanlynhatro_h2clt_home.R
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityManHinhChinhChuTroBinding
 
 class ManHinhChinhChuTro : AppCompatActivity() {
@@ -16,12 +17,22 @@ class ManHinhChinhChuTro : AppCompatActivity() {
         TabLayoutMediator(binding.tabLayoutManHinhChinh,binding.viewPager2ManHinhChinh) { tab, pos ->
             when (pos) {
                 0 -> {
-                    tab.text = "Quản Lý"
+                    tab.setIcon(R.drawable.home_icon)
+                    tab.text = "Trang chủ"
                 }
                 1 -> {
-                    tab.text = "Tổng Quan"
+                    tab.setIcon(R.drawable.dangtin_icon)
+                    tab.text = "Đăng tin"
                 }
-                else -> tab.text = "Quản Lý"
+                2 -> {
+                    tab.setIcon(R.drawable.thongbao)
+                    tab.text = "Thông báo"
+                }
+                3 -> {
+                    tab.setIcon(R.drawable.canhan_icon)
+                    tab.text = "Cá nhân"
+                }
+                else -> tab.text = "Trang chủ"
             }
         }.attach()
 
