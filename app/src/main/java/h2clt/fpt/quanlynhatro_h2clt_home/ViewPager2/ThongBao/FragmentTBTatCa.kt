@@ -17,7 +17,7 @@ class FragmentTBTatCa: Fragment() {
     ): View? {
         binding = TablayoutThongbaoTatcaBinding.inflate(layoutInflater)
 
-        binding.TBTatca.setBackgroundColor(Color.BLUE)
+
 
 
         return binding.root
