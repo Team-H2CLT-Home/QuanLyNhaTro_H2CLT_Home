@@ -25,8 +25,14 @@
             android:name=".ThemKhuTroActivity"
             android:exported="false" />
         <activity
-            android:name=".ManHinhChinhChuTro"
-            android:exported="false" />
+            android:name=".ViewPager2.ManHinhChinhChuTro"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".HuongDanTaoKhuActivity"
             android:exported="false" />

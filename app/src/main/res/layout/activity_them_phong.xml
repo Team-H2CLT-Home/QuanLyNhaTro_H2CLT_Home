@@ -223,24 +223,28 @@
                 android:layout_gravity="center"
                 android:text="Thêm dịch vụ"/>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
+
             <Button
                 android:id="@+id/btnLuuThemPhong"
-                android:layout_width="230dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:text="Thêm dịch vụ"/>
+                android:text="Lưu" />
+
             <Button
                 android:id="@+id/btnHuyThemPhong"
-                android:layout_width="230dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="40dp"
-                android:layout_gravity="center"
-                android:text="Thêm dịch vụ"/>
+                android:text="Hủy" />
         </LinearLayout>
     </LinearLayout>
 
