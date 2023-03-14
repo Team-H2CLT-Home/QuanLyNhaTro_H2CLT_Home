@@ -32,5 +32,7 @@ class FragmentTrangChu:Fragment() {
 //            startActivity(intent)
 //        }
 //        return binding.root
+
+        //gggg
     }
 }
