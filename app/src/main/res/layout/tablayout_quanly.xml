@@ -26,7 +26,9 @@
             android:columnCount="2"
             android:rowCount="2">
 
-            <LinearLayout style="@style/Tablayout_Linner">
+            <LinearLayout
+                android:id="@+id/taoHopDong"
+                style="@style/Tablayout_Linner">
 
                 <ImageView
                     style="@style/image_tabLayout"
