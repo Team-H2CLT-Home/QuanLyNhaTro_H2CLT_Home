@@ -16,8 +16,7 @@ class FragmentTBKhac: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = TablayoutThongbaoTatcaBinding.inflate(layoutInflater)
-
-        binding.TBTatca.setBackgroundColor(Color.BLUE)
+        binding.TBTatca.setBackgroundColor(Color.GREEN)
 
 
         return binding.root
