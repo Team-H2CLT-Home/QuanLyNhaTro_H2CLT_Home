@@ -18,6 +18,7 @@ class HoaDonDao(context: Context) {
             put(Hoa_Don.CLM_TRANG_THAI_HOA_DON,hoaDon.trang_thai_hoa_don)
             put(Hoa_Don.CLM_SO_DIEN,hoaDon.so_dien)
             put(Hoa_Don.CLM_SO_NUOC,hoaDon.so_nuoc)
+            put(Hoa_Don.CLM_MIEN_GIAM,hoaDon.mien_giam)
             put(Hoa_Don.CLM_MA_PHONG,hoaDon.ma_phong)
 
 
@@ -34,12 +35,12 @@ class HoaDonDao(context: Context) {
             do {
                 val hoaDon=Hoa_Don(
                     ma_hoa_don = c.getString(c.getColumnIndex(Hoa_Don.CLM_MA_HOA_DON)),
-
-                trang_thai_hoa_don = c.getInt(c.getColumnIndex(Hoa_Don.CLM_TRANG_THAI_HOA_DON)),
+                    ngay_tao_hoa_don = c.getString(c.getColumnIndex(Hoa_Don.CLM_NGAY_TAO_HOA_DON)),
+                    trang_thai_hoa_don = c.getInt(c.getColumnIndex(Hoa_Don.CLM_TRANG_THAI_HOA_DON)),
                     so_dien = c.getInt(c.getColumnIndex(Hoa_Don.CLM_SO_DIEN)),
                     so_nuoc = c.getInt(c.getColumnIndex(Hoa_Don.CLM_SO_NUOC)),
+                    mien_giam = c.getInt(c.getColumnIndex(Hoa_Don.CLM_MIEN_GIAM)),
                     ma_phong = c.getString(c.getColumnIndex(Hoa_Don.CLM_MA_PHONG))
-
                 )
                 list+=hoaDon
             }while (c.moveToNext())

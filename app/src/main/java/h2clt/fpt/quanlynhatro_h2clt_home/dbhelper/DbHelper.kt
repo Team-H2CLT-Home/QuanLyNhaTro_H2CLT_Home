@@ -74,6 +74,7 @@ class DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VERSI
             ${Hoa_Don.CLM_SO_DIEN} integer NOT NULL,
             ${Hoa_Don.CLM_SO_NUOC} integer NOT NULL,
             ${Hoa_Don.CLM_TRANG_THAI_HOA_DON} integer NOT NULL,
+            ${Hoa_Don.CLM_MIEN_GIAM}integer NOT NULL,
             ${Hoa_Don.CLM_MA_PHONG} text NOT NULL,
             FOREIGN KEY (${Hoa_Don.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}));
         """.trimIndent()

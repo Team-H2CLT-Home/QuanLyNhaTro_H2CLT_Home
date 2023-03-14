@@ -4,10 +4,11 @@ import java.util.Date
 
 data class Hoa_Don(
     val ma_hoa_don:String,
-    val ngay_tao_hoa_don:Date,
+    val ngay_tao_hoa_don:String,
     val trang_thai_hoa_don:Int,
     val so_dien:Int,
     val so_nuoc:Int,
+    val mien_giam:Int,
     val ma_phong:String){
     companion object{
         const val TB_NAME="hoa_don"
@@ -16,6 +17,7 @@ data class Hoa_Don(
         const val CLM_TRANG_THAI_HOA_DON="trang_thai_hoa_don"
         const val CLM_SO_DIEN="so_dien"
         const val CLM_SO_NUOC="so_nuoc"
+        const val CLM_MIEN_GIAM="mien_giam"
         const val CLM_MA_PHONG="ma_phong"
     }
 }
