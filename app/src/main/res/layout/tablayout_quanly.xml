@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mauNenApp"
     android:layout_marginBottom="5dp">
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,15 +12,8 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="3dp"
+            style="@style/textView_Tieude"
             android:text="Thao tác nhà trọ"
-            android:layout_marginLeft="8dp"
-            android:textColor="@color/mauChinhApp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginTop="5dp"
             />
 
         <GridLayout
@@ -63,7 +57,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_coctien1" />
+                    android:src="@drawable/icon_traphong_ql" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -77,11 +71,11 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_coctien1" />
+                    android:src="@drawable/icon_taohoadon" />
 
                 <TextView
                     style="@style/textView_tabLayout"
-                    android:text="Tạo hợp đồng" />
+                    android:text="Tạo hóa đơn" />
             </LinearLayout>
         </GridLayout>
         <TextView
@@ -101,7 +95,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_hopdong1" />
+                    android:src="@drawable/icon_dsphong" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -150,10 +144,12 @@
                     android:text="Danh sách hợp đồng" />
             </LinearLayout>
         </GridLayout>
-
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="#C6C6C6"
+            />
     </LinearLayout>
-
-
-
 
 </ScrollView>
