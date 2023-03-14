@@ -12,20 +12,21 @@ import h2clt.fpt.quanlynhatro_h2clt_home.ChiTietPhongActivity
 import h2clt.fpt.quanlynhatro_h2clt_home.DangNhap
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityDangKyBinding
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.FragmentThongbaoBinding
+import h2clt.fpt.quanlynhatro_h2clt_home.databinding.FragmentTrangchuBinding
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.TablayoutQuanlyBinding
 
 class FragmentTrangChu:Fragment() {
 
-    private lateinit var binding: FragmentThongbaoBinding
+    private lateinit var binding: FragmentTrangchuBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentThongbaoBinding.inflate(inflater, container, false)
-        val adapter = ViewPager2ThongBao(parentFragmentManager, lifecycle)
-        binding.viewPager2ThongBao.adapter = adapter
-        TabLayoutMediator(binding.tabLayoutThongBao, binding.viewPager2ThongBao) { tab, pos ->
+        binding = FragmentTrangchuBinding.inflate(inflater, container, false)
+        val adapter = ViewPager2TrangChu(parentFragmentManager, lifecycle)
+        binding.viewPager2TrangChu.adapter = adapter
+        TabLayoutMediator(binding.tabLayoutTrangChu, binding.viewPager2TrangChu) { tab, pos ->
             when (pos) {
                 0 -> {
                     tab.text = "Quản Lý"
