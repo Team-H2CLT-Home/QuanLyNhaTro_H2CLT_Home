@@ -63,4 +63,9 @@
 
     </style>
 
+    /// setTextSize của tabLayout
+    <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+    </style>
+
 </resources>

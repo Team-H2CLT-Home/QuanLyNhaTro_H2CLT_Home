@@ -158,29 +158,11 @@
                 android:hint="Địa chỉ"
                 />
         </com.google.android.material.textfield.TextInputLayout>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="15dp"
-            android:textSize="16dp"
-            android:textStyle="bold"
-            android:text="Định vị vị trí nhà trọ trên bản đồ"/>
-        <Button
-            android:id="@+id/btnLayViTri"
-            android:layout_width="280dp"
-            android:layout_margin="10dp"
-            android:layout_gravity="center"
-            android:backgroundTint="#FBB993"
-            android:textColor="#504F4F"
-            android:drawableLeft="@drawable/baseline_location_on_24"
-            android:layout_height="wrap_content"
-            android:text="Lấy vị trí trên bản đồ"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:orientation="horizontal">
             <ImageView
                 android:layout_width="25dp"

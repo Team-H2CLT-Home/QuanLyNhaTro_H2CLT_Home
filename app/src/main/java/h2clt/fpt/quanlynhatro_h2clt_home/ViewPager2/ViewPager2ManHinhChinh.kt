@@ -8,14 +8,16 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 class ViewPager2ManHinhChinh(fragmentManager: FragmentManager,lifecycle: Lifecycle):
     FragmentStateAdapter(fragmentManager,lifecycle) {
     override fun getItemCount(): Int {
-        return 2
+        return 4
     }
 
     override fun createFragment(position: Int): Fragment {
         return when(position){
-            0 -> {FragmentQuanLy()}
-            1 -> {FragmentQuanLy()}
-            else ->{FragmentQuanLy()}
+            0 -> {FragmentTrangChu()}
+            1 -> {FragmentDangTin()}
+            2 -> {FragmentThongBao()}
+            3 -> {FragmentCaNhan()}
+            else ->{FragmentTrangChu()}
         }
     }
 }
