@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/mauNenApp"
     tools:context=".ViewPager2.ManHinhChinhChuTro">
    <LinearLayout
        android:layout_width="match_parent"
@@ -19,6 +20,7 @@
            android:background="@color/mauChinhApp"
            >
            <androidx.appcompat.widget.Toolbar
+               android:id="@+id/toobarManHinhChinh"
                style="@style/toolBar"
                >
                <ImageView

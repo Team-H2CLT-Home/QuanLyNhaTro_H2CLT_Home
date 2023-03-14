@@ -12,13 +12,6 @@
         android:theme="@style/Theme.QuanLyNhaTro_H2CLT_Home"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityDanhSachHoaDon"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ThemPhongActivity"
             android:exported="false" />
         <activity
@@ -32,11 +25,8 @@
             android:name=".ThemKhuTroActivity"
             android:exported="false" />
         <activity
-            android:name=".ChiTietPhongActivity"
-            android:exported="false" />
-        <activity
             android:name=".ViewPager2.ManHinhChinhChuTro"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -61,7 +51,13 @@
             android:exported="false" />
         <activity
             android:name=".ManHinhChao"
-            android:exported="true"></activity>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

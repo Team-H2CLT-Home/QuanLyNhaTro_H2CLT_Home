@@ -75,7 +75,7 @@
 
                 <TextView
                     style="@style/textView_tabLayout"
-                    android:text="Cọc giữ chỗ"/>
+                    android:text="Cọc giữ chỗ" />
             </LinearLayout>
 
 
