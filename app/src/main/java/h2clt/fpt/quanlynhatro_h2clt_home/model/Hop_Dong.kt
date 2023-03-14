@@ -5,8 +5,8 @@ import java.util.Date
 data class Hop_Dong(
     val ma_hop_dong:String,
     val thoi_han:Int,
-    val ngay_o:Date,
-    val ngay_hop_dong:Date,
+    val ngay_o:String,
+    val ngay_hop_dong:String,
     val anh_hop_dong:String,
     val tien_coc:Int,
     val trang_thai_hop_dong:Int,

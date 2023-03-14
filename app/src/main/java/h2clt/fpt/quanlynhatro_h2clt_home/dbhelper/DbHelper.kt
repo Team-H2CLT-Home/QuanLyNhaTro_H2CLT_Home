@@ -96,8 +96,8 @@ class DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VERSI
             CREATE TABLE ${Hop_Dong.TB_NAME}(
             ${Hop_Dong.CLM_MA_HOP_DONG} text PRIMARY KEY NOT NULL,
             ${Hop_Dong.CLM_THOI_HAN} integer NOT NULL,
-            ${Hop_Dong.CLM_NGAY_O} date NOT NULL,
-            ${Hop_Dong.CLM_NGAY_HOP_DONG} date NOT NULL,
+            ${Hop_Dong.CLM_NGAY_O} text NOT NULL,
+            ${Hop_Dong.CLM_NGAY_HOP_DONG} text NOT NULL,
             ${Hop_Dong.CLM_ANH_HOP_DONG}  text NOT NULL,
             ${Hop_Dong.CLM_TIEN_COC} long NOT NULL,
             ${Hop_Dong.CLM_TRANG_THAI_HOP_DONG} integer NOT NULL,
@@ -112,7 +112,7 @@ class DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VERSI
             CREATE TABLE ${Thong_Bao.TB_NAME}(
             ${Thong_Bao.CLM_MA_THONG_BAO} text PRIMARY KEY NOT NULL,
             ${Thong_Bao.CLM_TIEU_DE} text NOT NULL,
-            ${Thong_Bao.CLM_NGAY_THONG_BAO} date NOT NULL,
+            ${Thong_Bao.CLM_NGAY_THONG_BAO} text NOT NULL,
             ${Thong_Bao.CLM_NOI_DUNG} text NOT NULL
             );
         """.trimIndent()
