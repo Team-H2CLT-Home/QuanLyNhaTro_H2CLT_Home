@@ -37,7 +37,6 @@
                 <TextView
                     style="@style/textView_tabLayout"
                     android:text="Tạo Hợp Đồng"
-
                     />
             </LinearLayout>
 
