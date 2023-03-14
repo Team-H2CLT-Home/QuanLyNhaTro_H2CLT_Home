@@ -26,5 +26,11 @@ class FragmentTrangChu:Fragment() {
             startActivity(intent)
         }
         return binding.root
+//        binding = TablayoutQuanlyBinding.inflate(inflater,container,false)
+//        binding.taoHopDong.setOnClickListener {
+//            val intent = Intent(context,ChiTietPhongActivity::class.java)
+//            startActivity(intent)
+//        }
+//        return binding.root
     }
 }
