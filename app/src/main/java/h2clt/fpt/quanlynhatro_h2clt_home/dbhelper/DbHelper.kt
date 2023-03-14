@@ -7,7 +7,7 @@ import h2clt.fpt.quanlynhatro_h2clt_home.dbhelper.DbHelper.H2CLT.DB_NAME
 import h2clt.fpt.quanlynhatro_h2clt_home.dbhelper.DbHelper.H2CLT.DB_VERSION
 import h2clt.fpt.quanlynhatro_h2clt_home.model.*
 
-class DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VERSION) {
+class   DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VERSION) {
     object H2CLT{
         const val DB_NAME="MyDB"
         const val DB_VERSION=1
