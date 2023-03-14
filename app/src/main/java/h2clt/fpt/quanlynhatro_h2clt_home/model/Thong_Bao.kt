@@ -5,7 +5,7 @@ import java.util.Date
 data class Thong_Bao(
     val ma_thong_bao:String,
     val tieu_de:String,
-    val ngay_thong_bao:Date,
+    val ngay_thong_bao:String,
     val noi_dung:String){
     companion object{
         const val TB_NAME="hop_dong"
