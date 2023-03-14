@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="390dp"
     android:layout_height="wrap_content"
     android:layout_margin="15dp"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="10dp"
     android:orientation="vertical">
@@ -87,12 +86,26 @@
                     android:layout_marginLeft="5dp"
                     android:text="Còn hợp đồng"
                     android:textStyle="bold" />
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:layout_marginLeft="30dp"
-                    android:text="Chi tiết hợp đồng"/>
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imgChiTietDanhSachHopDong"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/chi_tiet_hd"/>
+                    <TextView
+                        android:id="@+id/tvChiTietDanhSachHD"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:text="Chi tiết hợp đồng"/>
+                </LinearLayout>
 
             </LinearLayout>
 
