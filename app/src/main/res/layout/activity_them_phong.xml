@@ -12,7 +12,7 @@
         android:orientation="vertical">
         <androidx.appcompat.widget.Toolbar
             style="@style/toolBar"
-            app:title="@string/them_moi_khu_tro"
+            app:title="@string/them_phong_tro"
 
             />
         <com.google.android.material.textfield.TextInputLayout
@@ -33,7 +33,7 @@
         </com.google.android.material.textfield.TextInputLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="360dp"
+            android:layout_height="400dp"
             android:background="@drawable/boder_nen"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="10dp"
@@ -83,6 +83,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_height="1dp"
+                android:background="#656464"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -127,6 +134,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_height="1dp"
+                android:background="#656464"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -171,6 +185,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_height="1dp"
+                android:background="#656464"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -215,6 +236,13 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_height="1dp"
+                android:background="#656464"/>
             <Button
                 android:id="@+id/btnThemDichVu"
                 android:layout_width="230dp"
