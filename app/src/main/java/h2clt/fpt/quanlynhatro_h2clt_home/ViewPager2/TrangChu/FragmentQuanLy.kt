@@ -7,12 +7,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import h2clt.fpt.quanlynhatro_h2clt_home.ActivityDanhSachHoaDon
+import h2clt.fpt.quanlynhatro_h2clt_home.ActivityDanhSachNguoiThue
 import h2clt.fpt.quanlynhatro_h2clt_home.ChiTietPhongActivity
 import h2clt.fpt.quanlynhatro_h2clt_home.DangNhap
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.TablayoutQuanlyBinding
 
+
 class FragmentQuanLy:Fragment() {
-    private lateinit var binding: TablayoutQuanlyBinding
+    private lateinit var binding:TablayoutQuanlyBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
