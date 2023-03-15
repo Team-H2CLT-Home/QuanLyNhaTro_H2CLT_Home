@@ -12,6 +12,20 @@
         android:theme="@style/Theme.QuanLyNhaTro_H2CLT_Home"
         tools:targetApi="31">
         <activity
+            android:name=".ActivityPhongDaCocGiuCho"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ActivityPhongSapHetHopDong"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".ActivityPhongChuaDongTien"
             android:exported="false">
             <meta-data
