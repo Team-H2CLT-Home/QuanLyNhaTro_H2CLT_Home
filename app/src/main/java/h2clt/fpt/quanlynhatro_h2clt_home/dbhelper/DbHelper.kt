@@ -70,7 +70,7 @@ class   DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VER
             
             CREATE table ${Hoa_Don.TB_NAME}(
             ${Hoa_Don.CLM_MA_HOA_DON} text PRIMARY KEY NOT NULL,
-            ${Hoa_Don.CLM_NGAY_TAO_HOA_DON} date NOT NULL,
+            ${Hoa_Don.CLM_NGAY_TAO_HOA_DON} text NOT NULL,
             ${Hoa_Don.CLM_SO_DIEN} integer NOT NULL,
             ${Hoa_Don.CLM_SO_NUOC} integer NOT NULL,
             ${Hoa_Don.CLM_TRANG_THAI_HOA_DON} integer NOT NULL,
