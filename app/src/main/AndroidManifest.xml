@@ -12,15 +12,6 @@
         android:theme="@style/Theme.QuanLyNhaTro_H2CLT_Home"
         tools:targetApi="31">
         <activity
-            android:name=".DoanhThuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PhongDangThueActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PhongTrongActivity"
-            android:exported="false" />
-        <activity
             android:name=".ThemPhongActivity"
             android:exported="false" />
         <activity
@@ -35,7 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".ViewPager2.ManHinhChinhChuTro"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
