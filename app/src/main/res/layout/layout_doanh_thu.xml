@@ -16,8 +16,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <TextView
-                android:id="@+id/tvDoanhThuKhu"
+                android:id="@+id/tvTenKhuDoanhThu"
                 android:layout_width="wrap_content"
+                android:textStyle="bold"
                 android:layout_height="wrap_content"
                 android:text="Khu A"
                 android:textSize="17dp"
@@ -70,6 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/allerta_stencil"
+                android:textSize="17sp"
                 android:textColor="@color/black"
                 android:text="#PH29166"/>
             <LinearLayout
