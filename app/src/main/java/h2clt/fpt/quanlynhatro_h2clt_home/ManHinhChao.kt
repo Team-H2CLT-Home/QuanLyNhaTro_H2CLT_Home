@@ -11,7 +11,7 @@ class ManHinhChao : AppCompatActivity() {
         setContentView(R.layout.activity_man_hinh_chao)
         val handler = Handler()
         handler.postDelayed(Runnable {
-            val intent = Intent(this,ChiTietPhongActivity::class.java)
+            val intent = Intent(this,DangNhap::class.java)
             startActivity(intent)
         },2000)
 

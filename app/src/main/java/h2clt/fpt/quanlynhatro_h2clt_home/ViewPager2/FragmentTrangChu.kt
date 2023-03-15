@@ -7,32 +7,37 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import com.google.android.material.tabs.TabLayoutMediator
 import h2clt.fpt.quanlynhatro_h2clt_home.ChiTietPhongActivity
 import h2clt.fpt.quanlynhatro_h2clt_home.DangNhap
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityDangKyBinding
+import h2clt.fpt.quanlynhatro_h2clt_home.databinding.FragmentThongbaoBinding
+import h2clt.fpt.quanlynhatro_h2clt_home.databinding.FragmentTrangchuBinding
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.TablayoutQuanlyBinding
 
 class FragmentTrangChu:Fragment() {
 
-     private lateinit var binding: TablayoutQuanlyBinding
+    private lateinit var binding: FragmentTrangchuBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = TablayoutQuanlyBinding.inflate(inflater,container,false)
-        binding.taoHopDong.setOnClickListener {
-            val intent = Intent(context,ChiTietPhongActivity::class.java)
-            startActivity(intent)
-        }
-        return binding.root
-//        binding = TablayoutQuanlyBinding.inflate(inflater,container,false)
-//        binding.taoHopDong.setOnClickListener {
-//            val intent = Intent(context,ChiTietPhongActivity::class.java)
-//            startActivity(intent)
-//        }
-//        return binding.root
+        binding = FragmentTrangchuBinding.inflate(inflater, container, false)
+        val adapter = ViewPager2TrangChu(parentFragmentManager, lifecycle)
+        binding.viewPager2TrangChu.adapter = adapter
+        TabLayoutMediator(binding.tabLayoutTrangChu, binding.viewPager2TrangChu) { tab, pos ->
+            when (pos) {
+                0 -> {
+                    tab.text = "Quản Lý"
+                }
+                1 -> {
+                    tab.text = "Tổng Quan"
+                }
 
-        //gggg
+                else -> tab.text = "Quản Lý"
+            }
+        }.attach()
+        return binding.root
     }
 }
