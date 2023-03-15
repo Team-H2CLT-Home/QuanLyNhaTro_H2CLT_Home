@@ -10,7 +10,7 @@ class AdminDao(context: Context) {
     val dbHelper=DbHelper(context)
     val db=dbHelper.writableDatabase
 
-    fun InsertAdmin(admin: Admin):Long{
+    fun insertAdmin(admin: Admin):Long{
         val values=ContentValues()
         values.apply {
             put(Admin.CLM_TEN_DANG_NHAP, admin.ten_dang_nhap)
