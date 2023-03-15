@@ -10,7 +10,7 @@ class KhuTroDao(context: Context) {
     val dbHelper= DbHelper(context)
     val db=dbHelper.writableDatabase
 
-    fun InsertKhuTro(khuTro: Khu_Tro):Long{
+    fun insertKhuTro(khuTro: Khu_Tro):Long{
         val values=ContentValues()
         values.apply {
             put(Khu_Tro.CLM_MA_KHU_TRO,khuTro.ma_khu_tro)
@@ -23,7 +23,7 @@ class KhuTroDao(context: Context) {
     }
 
     @SuppressLint("Range")
-    fun getAllInKhuTro(khuTro: Khu_Tro):List<Khu_Tro>{
+    fun getAllInKhuTro():List<Khu_Tro>{
         val list= mutableListOf<Khu_Tro>()
         val sql="select * from ${Khu_Tro.TB_NAME}"
         val c=db.rawQuery(sql,null)

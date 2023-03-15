@@ -28,7 +28,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_hopdong1" />
+                    android:src="@drawable/icon_taohopdong" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -42,7 +42,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_coctien1" />
+                    android:src="@drawable/icon_coctien" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -57,7 +57,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/icon_traphong_ql" />
+                    android:src="@drawable/icon_traphong" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -95,7 +95,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/icon_dsphong" />
+                    android:src="@drawable/ds_phong" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -109,7 +109,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_coctien1" />
+                    android:src="@drawable/list_nguoi_dung" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -123,7 +123,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_coctien1" />
+                    android:src="@drawable/list_hoadon" />
 
                 <TextView
                     style="@style/textView_tabLayout"
@@ -137,7 +137,7 @@
 
                 <ImageView
                     style="@style/image_tabLayout"
-                    android:src="@drawable/img_coctien1" />
+                    android:src="@drawable/list_hop_dong" />
 
                 <TextView
                     style="@style/textView_tabLayout"

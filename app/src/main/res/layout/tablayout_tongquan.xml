@@ -166,7 +166,7 @@
            android:background="@drawable/boder_tron_colorwhite"
            android:layout_marginRight="15dp">
            <ImageView
-               android:layout_marginLeft="5dp"
+               android:layout_marginLeft="10dp"
                android:layout_width="50dp"
                android:layout_height="90dp"
                android:src="@drawable/img_soluongcoc"
@@ -215,7 +215,7 @@
            android:background="@drawable/boder_tron_colorwhite"
            android:layout_marginRight="15dp">
            <ImageView
-               android:layout_marginLeft="5dp"
+               android:layout_marginLeft="10dp"
                android:layout_width="50dp"
                android:layout_height="90dp"
                android:src="@drawable/icon_doangthu"
