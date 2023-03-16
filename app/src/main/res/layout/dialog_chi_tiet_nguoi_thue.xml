@@ -87,9 +87,6 @@
         android:text="Quê quán: Thôn 1, Xã 1, Huyện Đông Triều, Thành phố Hạ Long, tỉnh Quảnh Ninh"/>
     <Button
         android:id="@+id/btnDongChiTietNguoiThue"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_gravity="center"
+        style="@style/button"
         android:text="Đóng"/>
 </LinearLayout>

@@ -51,14 +51,19 @@
         </LinearLayout>
 
     </LinearLayout>
-
-    <Button
-        style="@style/button"
-        android:text="Đăng Tin"
-        android:background="@drawable/boder_tron"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
+    <TextView
+        android:id="@+id/tv_dangtin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/boder_nen_dangtin"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="Hôm nay bạn thế nào ?"
         />
+
+
 </LinearLayout>
     <View
         android:layout_marginTop="10dp"
@@ -71,8 +76,15 @@
         android:id="@+id/recyDangTin"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
+        />
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#AEAEAE"
         />
 </LinearLayout>

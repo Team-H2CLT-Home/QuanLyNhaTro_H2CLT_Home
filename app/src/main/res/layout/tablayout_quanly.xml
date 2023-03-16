@@ -65,7 +65,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/TaoHopDong"
+                android:id="@+id/taoHoaDon"
                 style="@style/Tablayout_Linner"
                 android:layout_marginTop="10dp">
 

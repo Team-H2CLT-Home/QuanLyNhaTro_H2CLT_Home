@@ -13,7 +13,11 @@ class DangNhap : AppCompatActivity() {
         binding = ActivityDangNhapBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.btnLuuDN.setOnClickListener {
-            val intent = Intent(this,ManHinhChinhChuTro::class.java)
+            val intent = Intent(this@DangNhap,ManHinhChinhChuTro::class.java)
+            startActivity(intent)
+        }
+        binding.linerDk.setOnClickListener {
+            val intent = Intent(this@DangNhap,DangKy::class.java)
             startActivity(intent)
         }
     }
