@@ -100,32 +100,21 @@
                         android:textColor="#636363"
                         />
                 </LinearLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp">
                     <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="3dp"
+                        android:layout_width="145dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
                         android:layout_marginRight="3dp"
                         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
                         >
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/edGiaPhong"
+                            android:id="@+id/edGiaThue"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:background="@color/white"
+                            android:background="@drawable/boder_tron_colorwhite"
                             />
                     </com.google.android.material.textfield.TextInputLayout>
-                </androidx.cardview.widget.CardView>
-
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"
@@ -162,30 +151,21 @@
                         android:textColor="#636363"
                         />
                 </LinearLayout>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_marginTop="20dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="145dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp">
-                    <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="3dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edSoDie"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-                        >
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/edSoDien"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            />
-                    </com.google.android.material.textfield.TextInputLayout>
-                </androidx.cardview.widget.CardView>
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_tron_colorwhite"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"
@@ -222,30 +202,21 @@
                         android:textColor="#636363"
                         />
                 </LinearLayout>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_marginTop="20dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="145dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp">
-                    <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edKhoiNuoc"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-                        >
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/edKhoiNuoc"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            />
-                    </com.google.android.material.textfield.TextInputLayout>
-                </androidx.cardview.widget.CardView>
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_tron_colorwhite"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"
@@ -282,30 +253,21 @@
                         android:textColor="#636363"
                         />
                 </LinearLayout>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_marginTop="20dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="145dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp">
-                    <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edGiaDichVu"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-                        >
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/edGiaDichVu"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            />
-                    </com.google.android.material.textfield.TextInputLayout>
-                </androidx.cardview.widget.CardView>
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_tron_colorwhite"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"
@@ -342,30 +304,21 @@
                         android:textColor="#636363"
                         />
                 </LinearLayout>
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_marginTop="15dp"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="145dp"
+                    android:layout_height="60dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_marginBottom="5dp">
-                    <com.google.android.material.textfield.TextInputLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edTienMienGiam"
                         android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginLeft="3dp"
-                        android:layout_marginRight="3dp"
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-
-                        >
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/edTienMienGiam"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@color/white"
-                            />
-                    </com.google.android.material.textfield.TextInputLayout>
-                </androidx.cardview.widget.CardView>
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/boder_tron_colorwhite"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
             <View
                 android:layout_width="fill_parent"

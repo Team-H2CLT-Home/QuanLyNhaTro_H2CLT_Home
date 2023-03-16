@@ -55,6 +55,9 @@
             android:name=".ThemPhongActivity"
             android:exported="false" />
         <activity
+            android:name=".ActivitytaoHopDongMoi"
+            android:exported="false" />
+        <activity
             android:name=".ActivityDanhSachPhong"
             android:exported="false">
             <meta-data
