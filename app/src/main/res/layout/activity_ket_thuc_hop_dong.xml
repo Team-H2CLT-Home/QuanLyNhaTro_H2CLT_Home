@@ -9,7 +9,7 @@
     tools:context=".KetThucHopDongActivity">
     <androidx.appcompat.widget.Toolbar
         style="@style/toolBar"
-        app:title="Xử lý phòng"
+        app:title="Kết Thúc Hợp Đồng"
 
         />
     <ScrollView
