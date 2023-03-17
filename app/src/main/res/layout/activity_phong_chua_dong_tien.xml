@@ -11,13 +11,13 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/tbDanhSachPhong"
         style="@style/toolBar"
-        app:title="@string/danh_sach_phong_chua_dong_tien"
+        app:title="Phòng Chưa Đóng Tiền"
         />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rcyPhongChuaDongTien"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

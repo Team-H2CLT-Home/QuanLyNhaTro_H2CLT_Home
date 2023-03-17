@@ -28,7 +28,7 @@ class FragmentQuanLy:Fragment() {
             startActivity(intent)
         }
         binding.TraPhong.setOnClickListener {
-            val intent = Intent(context,KetThucHopDongActivity::class.java)
+            val intent = Intent(context,XuLyPhongActivity::class.java)
             startActivity(intent)
         }
         binding.taoHoaDon.setOnClickListener {

@@ -7,11 +7,14 @@
     android:orientation="vertical"
     android:background="@color/mauNenApp"
     tools:context=".PhongTrongActivity">
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        app:title="Phòng Trống"
+        />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerDanhSachPhongTrong"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
+        android:layout_height="match_parent"
 
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 

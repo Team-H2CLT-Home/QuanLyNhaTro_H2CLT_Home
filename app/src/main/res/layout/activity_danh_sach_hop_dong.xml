@@ -6,9 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/mauNenApp"
-
-    android:layout_margin="10dp"
     tools:context=".DanhSachHopDongActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBerDSHopDong"
+        style="@style/toolBar"
+        app:title="Danh sách hợp đồng"
+        />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerDanhSachHopDong"

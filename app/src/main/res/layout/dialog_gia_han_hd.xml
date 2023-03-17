@@ -70,6 +70,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Thời hạn hợp đồng cũ"
+                            android:enabled="false"
                             />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -124,6 +125,6 @@
             android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"
-            android:text="Lưu"/>
+            android:text="Hủy"/>
     </LinearLayout>
 </LinearLayout>
