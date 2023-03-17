@@ -8,6 +8,7 @@
     android:orientation="vertical">
 
     <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbDangKy"
         style="@style/toolBar"
         app:title="@string/dang_ky"
         />

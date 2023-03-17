@@ -24,17 +24,9 @@ class FragmentDangTin:Fragment() {
             val dialog = DialogDangtinBinding.inflate(LayoutInflater.from(context))
 
             bundle.setView(dialog.root)
-
-
-
-
-
-
             bundle.show()
 
         }
-
-
         return binding.root
     }
 }

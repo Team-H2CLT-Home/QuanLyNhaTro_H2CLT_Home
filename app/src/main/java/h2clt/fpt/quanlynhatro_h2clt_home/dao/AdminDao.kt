@@ -30,7 +30,7 @@ class AdminDao(context: Context) {
         if(c.moveToFirst()){
             do {
                 val admin=Admin(
-                  ten_dang_nhap =c.getString(c.getColumnIndex(Admin.CLM_TEN_DANG_NHAP)),
+                    ten_dang_nhap =c.getString(c.getColumnIndex(Admin.CLM_TEN_DANG_NHAP)),
                     sdt= c.getString(c.getColumnIndex(Admin.CLM_SDT)),
                     ho_ten = c.getString(c.getColumnIndex(Admin.CLM_HO_TEN)),
                     mat_khau = c.getString(c.getColumnIndex(Admin.CLM_MAT_KHAU))
