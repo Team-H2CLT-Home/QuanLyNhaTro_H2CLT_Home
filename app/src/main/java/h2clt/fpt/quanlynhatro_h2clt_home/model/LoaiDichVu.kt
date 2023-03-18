@@ -1,6 +1,6 @@
 package h2clt.fpt.quanlynhatro_h2clt_home.model
 
-data class Loai_Dich_Vu(
+data class LoaiDichVu(
     val ma_loai_dich_vu:String,
     val ten_loai_dich_vu:String,
     val gia_dich_vu:Int,

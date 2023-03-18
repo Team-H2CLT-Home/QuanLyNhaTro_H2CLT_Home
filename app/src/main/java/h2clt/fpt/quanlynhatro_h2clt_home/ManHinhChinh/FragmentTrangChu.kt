@@ -1,19 +1,12 @@
-package h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2
+package h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
-import h2clt.fpt.quanlynhatro_h2clt_home.ChiTietPhongActivity
-import h2clt.fpt.quanlynhatro_h2clt_home.DangNhap
-import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityDangKyBinding
-import h2clt.fpt.quanlynhatro_h2clt_home.databinding.FragmentThongbaoBinding
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.FragmentTrangchuBinding
-import h2clt.fpt.quanlynhatro_h2clt_home.databinding.TablayoutQuanlyBinding
 
 class FragmentTrangChu:Fragment() {
 
@@ -24,7 +17,7 @@ class FragmentTrangChu:Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentTrangchuBinding.inflate(inflater, container, false)
-        val adapter = ViewPager2TrangChu(parentFragmentManager, lifecycle)
+        val adapter = ViewPager2TrangChuAdapter(parentFragmentManager, lifecycle)
         binding.viewPager2TrangChu.adapter = adapter
         TabLayoutMediator(binding.tabLayoutTrangChu, binding.viewPager2TrangChu) { tab, pos ->
             when (pos) {

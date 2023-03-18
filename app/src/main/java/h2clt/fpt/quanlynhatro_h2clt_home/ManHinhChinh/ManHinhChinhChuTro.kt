@@ -1,6 +1,5 @@
-package h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2
+package h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh
 
-import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -33,7 +32,7 @@ class ManHinhChinhChuTro : AppCompatActivity() {
 
             bottomSheetDialog.show()
         }
-        val adapter = ViewPager2ManHinhChinh(supportFragmentManager,lifecycle)
+        val adapter = ViewPager2ManHinhChinhAdapter(supportFragmentManager,lifecycle)
         binding.viewPager2ManHinhChinh.adapter = adapter
         TabLayoutMediator(binding.tabLayoutManHinhChinh,binding.viewPager2ManHinhChinh) { tab, pos ->
             when (pos) {

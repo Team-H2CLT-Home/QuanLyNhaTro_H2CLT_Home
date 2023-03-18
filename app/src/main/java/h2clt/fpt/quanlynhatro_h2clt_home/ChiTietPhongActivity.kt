@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.android.material.tabs.TabLayoutMediator
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityChiTietPhongBinding
-import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityDanhSachPhongBinding
 
 class ChiTietPhongActivity : AppCompatActivity() {
     private lateinit var binding: ActivityChiTietPhongBinding
@@ -12,7 +11,7 @@ class ChiTietPhongActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityChiTietPhongBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val adapter = ViewPagerChiTietPhong(supportFragmentManager,lifecycle)
+        val adapter = ViewPagerChiTietPhongAdapter(supportFragmentManager,lifecycle)
         binding.viewPager2ChiTietPhong.adapter = adapter
         TabLayoutMediator(binding.tabLayoutChiTietPhong,binding.viewPager2ChiTietPhong){tab,pos ->
             when(pos){

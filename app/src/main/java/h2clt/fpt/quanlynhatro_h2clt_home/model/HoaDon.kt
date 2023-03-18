@@ -1,8 +1,6 @@
 package h2clt.fpt.quanlynhatro_h2clt_home.model
 
-import java.util.Date
-
-data class Hoa_Don(
+data class HoaDon(
     val ma_hoa_don:String,
     val ngay_tao_hoa_don:String,
     val trang_thai_hoa_don:Int,

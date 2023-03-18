@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2.ManHinhChinhChuTro
+import h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh.ManHinhChinhChuTro
 import h2clt.fpt.quanlynhatro_h2clt_home.databinding.ActivityDanhSachHopDongBinding
 
 class DanhSachHopDongActivity : AppCompatActivity() {

@@ -1,14 +1,14 @@
-package h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2
+package h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2.ThongBao.FragmentTBKhac
-import h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2.ThongBao.FragmentTBTatCa
-import h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2.ThongBao.FragmentTBTien
+import h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh.ThongBao.FragmentTBKhac
+import h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh.ThongBao.FragmentTBTatCa
+import h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh.ThongBao.FragmentTBTien
 
-class ViewPager2ThongBao(fragmentManager: FragmentManager, lifecycle: Lifecycle):
+class ViewPager2ThongBaoAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle):
     FragmentStateAdapter(fragmentManager,lifecycle) {
     override fun getItemCount(): Int {
         return 3

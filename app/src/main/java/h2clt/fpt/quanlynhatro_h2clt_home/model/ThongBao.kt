@@ -1,8 +1,6 @@
 package h2clt.fpt.quanlynhatro_h2clt_home.model
 
-import java.util.Date
-
-data class Thong_Bao(
+data class ThongBao(
     val ma_thong_bao:String,
     val tieu_de:String,
     val ngay_thong_bao:String,

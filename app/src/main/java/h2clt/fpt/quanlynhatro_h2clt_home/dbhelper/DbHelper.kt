@@ -23,31 +23,31 @@ class   DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VER
         db?.execSQL(admin)
 
         val khu_tro="""
-            CREATE TABLE ${Khu_Tro.TB_NAME}(
-            ${Khu_Tro.CLM_MA_KHU_TRO} text PRIMARY KEY NOT NULL,
-            ${Khu_Tro.CLM_TEN_KHU_TRO} text NOT NULL,
-            ${Khu_Tro.CLM_DIA_CHI} text NOT NULL,
-            ${Khu_Tro.CLM_SO_LUONG_PHONG} integer NOT NULL,
-            ${Khu_Tro.CLM_TEN_DANG_NHAP} text NOT NULL,
-            FOREIGN KEY (${Khu_Tro.CLM_TEN_DANG_NHAP}) REFERENCES ${Admin.TB_NAME}(${Admin.CLM_TEN_DANG_NHAP}));
+            CREATE TABLE ${KhuTro.TB_NAME}(
+            ${KhuTro.CLM_MA_KHU_TRO} text PRIMARY KEY NOT NULL,
+            ${KhuTro.CLM_TEN_KHU_TRO} text NOT NULL,
+            ${KhuTro.CLM_DIA_CHI} text NOT NULL,
+            ${KhuTro.CLM_SO_LUONG_PHONG} integer NOT NULL,
+            ${KhuTro.CLM_TEN_DANG_NHAP} text NOT NULL,
+            FOREIGN KEY (${KhuTro.CLM_TEN_DANG_NHAP}) REFERENCES ${Admin.TB_NAME}(${Admin.CLM_TEN_DANG_NHAP}));
         """.trimIndent()
         db?.execSQL(khu_tro)
 
         val dich_vu_phong="""
-            CREATE TABLE ${Dich_Vu_Phong.TB_NAME}(
-            ${Dich_Vu_Phong.CLM_MA_DICH_VU} text PRIMARY KEY NOT NULL,
-            ${Dich_Vu_Phong.CLM_TEN_DICH_VU} text NOT NULL);
+            CREATE TABLE ${DichVuPhong.TB_NAME}(
+            ${DichVuPhong.CLM_MA_DICH_VU} text PRIMARY KEY NOT NULL,
+            ${DichVuPhong.CLM_TEN_DICH_VU} text NOT NULL);
         """.trimIndent()
         db?.execSQL(dich_vu_phong)
 
         val loai_dich_vu="""
-            CREATE TABLE ${Loai_Dich_Vu.TB_NAME}(
-            ${Loai_Dich_Vu.CLM_MA_LOAI_DICH_VU} text PRIMARY KEY NOT NULL,
-            ${Loai_Dich_Vu.CLM_TEN_LOAI_DICH_VU} text  NOT NULL,
-            ${Loai_Dich_Vu.CLM_GIA_DICH_VU} integer NOT NULL,
-            ${Loai_Dich_Vu.CLM_MA_DICH_VU} text NOT NULL ,
-            ${Loai_Dich_Vu.CLM_TRANG_THAI_LOAI_DICH_VU} Integer NOT NULL,
-            FOREIGN KEY(${Loai_Dich_Vu.CLM_MA_DICH_VU})REFERENCES ${Dich_Vu_Phong.TB_NAME}( ${Dich_Vu_Phong.CLM_MA_DICH_VU}));
+            CREATE TABLE ${LoaiDichVu.TB_NAME}(
+            ${LoaiDichVu.CLM_MA_LOAI_DICH_VU} text PRIMARY KEY NOT NULL,
+            ${LoaiDichVu.CLM_TEN_LOAI_DICH_VU} text  NOT NULL,
+            ${LoaiDichVu.CLM_GIA_DICH_VU} integer NOT NULL,
+            ${LoaiDichVu.CLM_MA_DICH_VU} text NOT NULL ,
+            ${LoaiDichVu.CLM_TRANG_THAI_LOAI_DICH_VU} Integer NOT NULL,
+            FOREIGN KEY(${LoaiDichVu.CLM_MA_DICH_VU})REFERENCES ${DichVuPhong.TB_NAME}( ${DichVuPhong.CLM_MA_DICH_VU}));
         """.trimIndent()
         db?.execSQL(loai_dich_vu)
 
@@ -61,60 +61,60 @@ class   DbHelper(context: Context): SQLiteOpenHelper(context,DB_NAME,null,DB_VER
             ${Phong.CLM_TRANG_THAI_PHONG} integer NOT NULL,
             ${Phong.CLM_MA_KHU} text NOT NULL,
             ${Phong.CLM_MA_DICH_VU} text NOT NULL,
-            FOREIGN KEY(${Phong.CLM_MA_KHU})REFERENCES ${Khu_Tro.TB_NAME}(${Khu_Tro.CLM_MA_KHU_TRO}),
-            FOREIGN KEY (${Phong.CLM_MA_DICH_VU} ) REFERENCES ${Dich_Vu_Phong.TB_NAME}(${Dich_Vu_Phong.CLM_MA_DICH_VU} )); 
+            FOREIGN KEY(${Phong.CLM_MA_KHU})REFERENCES ${KhuTro.TB_NAME}(${KhuTro.CLM_MA_KHU_TRO}),
+            FOREIGN KEY (${Phong.CLM_MA_DICH_VU} ) REFERENCES ${DichVuPhong.TB_NAME}(${DichVuPhong.CLM_MA_DICH_VU} )); 
         """.trimIndent()
         db?.execSQL(phong)
 
         val hoa_don="""
             
-            CREATE table ${Hoa_Don.TB_NAME}(
-            ${Hoa_Don.CLM_MA_HOA_DON} text PRIMARY KEY NOT NULL,
-            ${Hoa_Don.CLM_NGAY_TAO_HOA_DON} text NOT NULL,
-            ${Hoa_Don.CLM_SO_DIEN} integer NOT NULL,
-            ${Hoa_Don.CLM_SO_NUOC} integer NOT NULL,
-            ${Hoa_Don.CLM_TRANG_THAI_HOA_DON} integer NOT NULL,
-            ${Hoa_Don.CLM_MIEN_GIAM}integer NOT NULL,
-            ${Hoa_Don.CLM_MA_PHONG} text NOT NULL,
-            FOREIGN KEY (${Hoa_Don.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}));
+            CREATE table ${HoaDon.TB_NAME}(
+            ${HoaDon.CLM_MA_HOA_DON} text PRIMARY KEY NOT NULL,
+            ${HoaDon.CLM_NGAY_TAO_HOA_DON} text NOT NULL,
+            ${HoaDon.CLM_SO_DIEN} integer NOT NULL,
+            ${HoaDon.CLM_SO_NUOC} integer NOT NULL,
+            ${HoaDon.CLM_TRANG_THAI_HOA_DON} integer NOT NULL,
+            ${HoaDon.CLM_MIEN_GIAM}integer NOT NULL,
+            ${HoaDon.CLM_MA_PHONG} text NOT NULL,
+            FOREIGN KEY (${HoaDon.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}));
         """.trimIndent()
         db?.execSQL(hoa_don)
 
         val nguoi_dung="""
-            CREATE TABLE ${Nguoi_Dung.TB_NAME}(
-            ${Nguoi_Dung.CLM_MA_NGUOI_DUNG} text PRIMARY key NOT NULL,
-            ${Nguoi_Dung.CLM_HO_TEN_NGUOI_DUNG} text NOT NULL,
-            ${Nguoi_Dung.CLM_CCCD} text NOT NULL,
-            ${Nguoi_Dung.CLM_SDT_NGUOI_DUNG} text unique NOT NULL,
-            ${Nguoi_Dung.CLM_MA_PHONG} text NOT NULL,
-            ${Nguoi_Dung.CLM_TRANG_THAI_O} integer not NULL,
-            ${Nguoi_Dung.CLM_TRANG_THAI_CHU_HOP_DONG} integer NOT NULL,
-            FOREIGN KEY (${Nguoi_Dung.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}));
+            CREATE TABLE ${NguoiDung.TB_NAME}(
+            ${NguoiDung.CLM_MA_NGUOI_DUNG} text PRIMARY key NOT NULL,
+            ${NguoiDung.CLM_HO_TEN_NGUOI_DUNG} text NOT NULL,
+            ${NguoiDung.CLM_CCCD} text NOT NULL,
+            ${NguoiDung.CLM_SDT_NGUOI_DUNG} text unique NOT NULL,
+            ${NguoiDung.CLM_MA_PHONG} text NOT NULL,
+            ${NguoiDung.CLM_TRANG_THAI_O} integer not NULL,
+            ${NguoiDung.CLM_TRANG_THAI_CHU_HOP_DONG} integer NOT NULL,
+            FOREIGN KEY (${NguoiDung.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}));
         """.trimIndent()
         db?.execSQL(nguoi_dung)
 
         val hop_dong="""
-            CREATE TABLE ${Hop_Dong.TB_NAME}(
-            ${Hop_Dong.CLM_MA_HOP_DONG} text PRIMARY KEY NOT NULL,
-            ${Hop_Dong.CLM_THOI_HAN} integer NOT NULL,
-            ${Hop_Dong.CLM_NGAY_O} text NOT NULL,
-            ${Hop_Dong.CLM_NGAY_HOP_DONG} text NOT NULL,
-            ${Hop_Dong.CLM_ANH_HOP_DONG}  text NOT NULL,
-            ${Hop_Dong.CLM_TIEN_COC} long NOT NULL,
-            ${Hop_Dong.CLM_TRANG_THAI_HOP_DONG} integer NOT NULL,
-            ${Hop_Dong.CLM_MA_PHONG} text NOT NULL,
-            ${Hop_Dong.CLM_MA_NGUOI_DUNG} text NOT NULL,
-            FOREIGN KEY (${Hop_Dong.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}),
-            FOREIGN KEY (${Hop_Dong.CLM_MA_NGUOI_DUNG} ) REFERENCES ${Nguoi_Dung.TB_NAME}(${Nguoi_Dung.CLM_MA_NGUOI_DUNG}));
+            CREATE TABLE ${HopDong.TB_NAME}(
+            ${HopDong.CLM_MA_HOP_DONG} text PRIMARY KEY NOT NULL,
+            ${HopDong.CLM_THOI_HAN} integer NOT NULL,
+            ${HopDong.CLM_NGAY_O} text NOT NULL,
+            ${HopDong.CLM_NGAY_HOP_DONG} text NOT NULL,
+            ${HopDong.CLM_ANH_HOP_DONG}  text NOT NULL,
+            ${HopDong.CLM_TIEN_COC} long NOT NULL,
+            ${HopDong.CLM_TRANG_THAI_HOP_DONG} integer NOT NULL,
+            ${HopDong.CLM_MA_PHONG} text NOT NULL,
+            ${HopDong.CLM_MA_NGUOI_DUNG} text NOT NULL,
+            FOREIGN KEY (${HopDong.CLM_MA_PHONG} ) REFERENCES ${Phong.TB_NAME}(${Phong.CLM_MA_PHONG}),
+            FOREIGN KEY (${HopDong.CLM_MA_NGUOI_DUNG} ) REFERENCES ${NguoiDung.TB_NAME}(${NguoiDung.CLM_MA_NGUOI_DUNG}));
         """.trimIndent()
         db?.execSQL(hop_dong)
 
         val thong_bao="""
-            CREATE TABLE ${Thong_Bao.TB_NAME}(
-            ${Thong_Bao.CLM_MA_THONG_BAO} text PRIMARY KEY NOT NULL,
-            ${Thong_Bao.CLM_TIEU_DE} text NOT NULL,
-            ${Thong_Bao.CLM_NGAY_THONG_BAO} text NOT NULL,
-            ${Thong_Bao.CLM_NOI_DUNG} text NOT NULL
+            CREATE TABLE ${ThongBao.TB_NAME}(
+            ${ThongBao.CLM_MA_THONG_BAO} text PRIMARY KEY NOT NULL,
+            ${ThongBao.CLM_TIEU_DE} text NOT NULL,
+            ${ThongBao.CLM_NGAY_THONG_BAO} text NOT NULL,
+            ${ThongBao.CLM_NOI_DUNG} text NOT NULL
             );
         """.trimIndent()
         db?.execSQL(thong_bao)

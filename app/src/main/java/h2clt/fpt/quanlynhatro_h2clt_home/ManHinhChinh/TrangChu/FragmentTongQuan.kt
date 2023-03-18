@@ -1,4 +1,4 @@
-package h2clt.fpt.quanlynhatro_h2clt_home.ViewPager2.TrangChu
+package h2clt.fpt.quanlynhatro_h2clt_home.ManHinhChinh.TrangChu
 
 import android.content.Intent
 import android.os.Bundle

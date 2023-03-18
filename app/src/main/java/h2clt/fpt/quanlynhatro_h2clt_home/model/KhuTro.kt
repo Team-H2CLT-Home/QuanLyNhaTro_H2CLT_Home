@@ -1,6 +1,6 @@
 package h2clt.fpt.quanlynhatro_h2clt_home.model
 
-data class Khu_Tro(
+data class KhuTro(
     val ma_khu_tro:String,
     val ten_khu_tro:String,
     val dia_chi:String,

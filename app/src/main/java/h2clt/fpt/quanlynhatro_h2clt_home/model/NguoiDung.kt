@@ -1,6 +1,6 @@
 package h2clt.fpt.quanlynhatro_h2clt_home.model
 
-data class Nguoi_Dung(
+data class NguoiDung(
     val ma_nguoi_dung:String,
     val ho_ten_nguoi_dung:String,
     val cccd:String,

@@ -68,7 +68,7 @@
             android:name=".ThemKhuTroActivity"
             android:exported="false" />
         <activity
-            android:name=".ViewPager2.ManHinhChinhChuTro"
+            android:name=".ManHinhChinh.ManHinhChinhChuTro"
             android:exported="true">
         </activity>
         <activity
